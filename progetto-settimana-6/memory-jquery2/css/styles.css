@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(45, 224, 0);
+    background-image: url(/img/bg.jpg);
+    background-position: center;
+    font-weight: bold;
+}
+button {
+    background-color: gray;
+    padding: 15px;
+    position: absolute;
+    top: 2vh;
+    right: 25vw;
+    border-radius:20px
+}
+.modal-content{
+    background-color: #171717;
+    text-align: center
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #52c60a 0%, #137808 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #171717;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(2, 2, 2, 0.712);
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;   
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2f2f2f;
+    font-size: 0;
+    color: #4dff00;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);;
+}
+
+.deck .card.open {
+    transform: rotateY(0) !important;
+    background: #6d6d6d;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 50px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #000000;
+    font-size: 50px;
+}
+
+.score-panel {
+    text-align: center;
+    width: 345px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 800px){
+    .deck .card{
+      width: 75px;
+      height: 75px;
+      line-height: 75px;
+    }
+  
+    .deck {
+      width: 500px;
+    }
+}
+  
+@media only screen and (max-width: 450px){
+    .deck .card{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+  
+    .deck {
+      width: 300px;
+    }
+}

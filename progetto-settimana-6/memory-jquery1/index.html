@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Memory con jQuery</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- struttura che andro a riempire in modo dinamico con un ciclo for -->
+    <div id="struttura"></div>
+    <section>
+      <!-- cronometro -->
+      <div class="cronometro">TEMPO: 0 min 0 sec</div>
+      <!-- contatore click -->
+      <div class="click">Numreo di click: <span>0</span></div>
+    </section>
+    <!-- progress bar -->
+    <div id="box"></div>
+    <div class="gameOver">Game Over</div>
+    <!-- modale sconfitta -->
+    <div id="sconfitta"><p>TROPPO LENTO!</p></div>
+    <!-- modale vittoria -->
+    <div id="vittoria">
+      <h2>Congratulazioni hai risolto il gioco in:</h2>
+      <p id="tempoTrascorso"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+Buona sera, 
+nel primo memory, avevo gia creato struttura, modali, contatori e progress bar collegata a un coutdown,
+inserito la funzione che mischia le carte e array di comparazione, ma poi mi sono bloccato.
+non riuscivo a dare una classe ai due elementi uguali in modo da mantenerli scoperti e non cliccabili, 
+perche non sono elementi html.
+avevo provato a puschare nell'array di comparazione l'html del parent di this in modo da prendere tutto il div, 
+con il this, prendendo tutta l'html dell'img (come si vede dalle stampe in console, a prendere solo l'attr(src),
+ma niente mi ero impantanato.
+come si vede, dando la classe a this riesco ad assegnare la classe find e disabled solo al secondo cliccato.
+ho lasciato le carte scoperte cosi si puo provare facilmente.
+
+il secondo e' completo ma ammetto di aver cercato su internet.
+ho pensato comunque sia corretto consegnarli entrambi.
