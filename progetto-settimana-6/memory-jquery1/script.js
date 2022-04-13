@@ -7,7 +7,7 @@ $(() => {
   var arrayShuffle = shuffle(mieImg);
   function preparaSchema() {
     for (let i = 0; i < 16; i++) {
-      let img = "<img id= '" + i + "' src='/img/" + arrayShuffle[i] + ".png'/>"; // con id
+      let img = "<img id= '" + i + "' src='img/" + arrayShuffle[i] + ".png'/>"; // con id
       // let img = "<img ' src='/img/" + arrayShuffle[i] + ".png'/>"; // senza id
       $("#struttura").append('<div class="carta">' + img + "</div>");
     }
