@@ -18,6 +18,9 @@
     margin: 50px;
     padding: 50px;
     border-radius: 25px;
+    animation: ombra 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
   }
   
   .title {
@@ -34,6 +37,8 @@
     font-size: 25px;
     justify-content: space-around;
     height: 30px;
+    height: 2em;
+    align-items: center;
   }
 
   .status .bi{
@@ -41,10 +46,20 @@
       background: rgba(50, 50, 246, 0.457);
       padding: 5px;
       border-radius: 5px;
+      animation: ombra 1.8s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
   }
   
   .reset, .modalReset {
     cursor: pointer;
+    animation: ombra 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+    padding: 10px 30px 0px 30px;
+    background: rgba(50, 50, 246, 0.457);
+    height: 2em;
   }
   
   .reset:hover, .modalReset:hover {
@@ -68,6 +83,9 @@
     cursor: pointer;
     height: 200px;
     width: 200px;
+    animation: ombra 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
   }
   
   .disabled{
@@ -91,10 +109,14 @@
     width: 600PX;
     height: 600PX;
     text-align: center;
-    background-color: rgba(50, 50, 246, 0.632);     
+    background-color: rgba(50, 50, 246, 0.703);
+    border-radius: 25px;
     padding: 100px 50px;
     font-size: 2em;
     display: none;
+    animation: ombra 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
   }
 
   .mostra{
@@ -108,8 +130,13 @@
     border-radius: 5px;
 }
 
+@keyframes ombra {
+  from {box-shadow: 0px 0px 0px black;}
+  to {box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.034);}
+}
 .modalReset{
-  margin-top: 2em;
+  margin-top: 1em;
+  padding: 15px 0px;
 }
   
   @media only screen and (max-width: 1024px) {
@@ -144,6 +171,7 @@
       background-color: rgba(7, 7, 7, 0.406);
       background-image: url(img/bgSmart.jpg);
       background-blend-mode: color-burn;
+      color: whitesmoke;
     }
 
     .container {
