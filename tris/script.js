@@ -10,8 +10,8 @@ const modalRicomincia = document.querySelector(".modalReset");
 let gameIsLive = true;
 let xIsNext = true;
 let vincitore = null;
-let xVince = `CONGRATULAZIONI GIOCATORE <i class="bi bi-x-lg"></i><br /> SEI IL VINCITRORE!!!`;
-let oVince = `CONGRATULAZIONI GIOCATORE <i class="bi bi-circle"></i><br /> SEI IL VINCITRORE!!!`;
+let xVince = `CONGRATULAZIONI GIOCATORE <i class="bi bi-x-lg"></i><br /> SEI IL VINCITORE!!!`;
+let oVince = `CONGRATULAZIONI GIOCATORE <i class="bi bi-circle"></i><br /> SEI IL VINCITORE!!!`;
 // funz ricomincia
 const FuncRicomincia = () => {
   for (const cellDiv of cellDivs) {
